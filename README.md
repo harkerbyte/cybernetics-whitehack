@@ -12,13 +12,14 @@ www.facebook.com/cyberhacks6
 
 ## Run commands one by one
 ```
->> git clone https:
+>> git clone https://github.com/shade234sherif/cybernetics-whitehack
 >> cd Facebook-BruteForce
 >> python3 -m pip install requests bs4
 >> python3 -m pip install mechanize
 >> python3 fb.py or python fb2.py
 ```
-
+## For kali 
+ sudo clone https://github.com/shade234sherif/cybernetics-whitehack
 
 ## Protection Against Attacker
 * Use Strong Password(which contains character + number + symbol)
