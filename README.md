@@ -13,7 +13,7 @@ www.facebook.com/cyberhacks6
 ## Run commands one by one
 ```
 >> git clone https://github.com/shade234sherif/cybernetics-whitehack
->> cd Facebook-BruteForce
+>> cd cybernetics-whitehack
 >> python3 -m pip install requests bs4
 >> python3 -m pip install mechanize
 >> python3 fb.py or python fb2.py
@@ -32,6 +32,6 @@ www.facebook.com/cyberhacks6
 https://www.facebook.com/cyberhacks6
 
 ~~~
-safe hacking ! (Just For Knowledge).
+safe hacking ! (Just For FUN).
                                                CYBERNETICS  -  C7B3RN3TI6
 ~~~
