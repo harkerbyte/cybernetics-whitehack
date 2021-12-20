@@ -16,7 +16,7 @@ www.facebook.com/cyberhacks6
 >> cd cybernetics-whitehack
 >> python3 -m pip install requests bs4
 >> python3 -m pip install mechanize
->> python3 fb.py or python fb2.py
+>> python3 fb.py 
 ```
 ## For kali 
  sudo clone https://github.com/shade234sherif/cybernetics-whitehack
@@ -30,7 +30,6 @@ www.facebook.com/cyberhacks6
 
 ## Explore More in Hacking ...
 https://www.facebook.com/cyberhacks6
-
 ~~~
 safe hacking ! (Just For FUN).
                                                CYBERNETICS  -  C7B3RN3TI6
