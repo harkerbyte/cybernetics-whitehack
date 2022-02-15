@@ -2,7 +2,7 @@
 ```
 Bruteforce attack for Facebook Account
 ```
-## Need help . Contact us via facebook
+## Need help . Contact us via FACEBOOK 
 www.facebook.com/cyberhacks6
 
 ## Install Requirements (on Linux) termux
