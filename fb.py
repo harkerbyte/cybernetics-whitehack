@@ -1,4 +1,5 @@
 import os.path
+import webbrowser 
 
 import sys
 
@@ -21,7 +22,7 @@ def create_form():
     form = dict()
     cookies = {'fr': '0ZvhC3YwYm63ZZat1..Ba0Ipu.Io.AAA.0.0.Ba0Ipu.AWUPqDLy'}
 
-    data = requests.get(POST_URL, headers=HEADERS)
+    data = webbrowser.get(POST_URL, headers=HEADERS)
     for i in data.cookies:
         cookies[i.name] = i.value
     data = BeautifulSoup(data.text, 'html.parser').form
