@@ -3,10 +3,10 @@ import sys
 if sys.version_info[0] !=2: 
 	print('''--------------------------------------
 	REQUIRED PYTHON 2.x
-	use: python fb2.py
+	use: python fb.py
 --------------------------------------
 			''')
-	sys.exit()
+	Break
 
 post_url='https://www.facebook.com/login.php'
 headers = {
