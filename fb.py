@@ -1,9 +1,10 @@
+from ast import Break
 import time
 import sys
 if sys.version_info[0] !=2: 
 	print('''--------------------------------------
 	REQUIRED PYTHON 2.x
-	use: python fb.py
+	use: python fb2.py
 --------------------------------------
 			''')
 	Break
