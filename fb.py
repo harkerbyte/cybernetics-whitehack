@@ -38,7 +38,7 @@ while file:
 	i+=1
 	if len(passw) < 6:
 		continue
-	print = str (i) +" : ",passw
+	print ;str (i) +" : ",passw
 	response = browser.open(post_url)
 	try:
 		if response.code == 200:
