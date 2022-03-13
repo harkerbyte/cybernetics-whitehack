@@ -1,5 +1,4 @@
-from ast import Break, Continue
-from http.client import CONTINUE
+from ast import Break
 import time
 import sys
 if sys.version_info[0] !=2: 
