@@ -1,4 +1,5 @@
-from ast import Break
+from ast import Break, Continue
+from http.client import CONTINUE
 import time
 import sys
 if sys.version_info[0] !=2: 
@@ -22,7 +23,7 @@ try:
 	browser.set_handle_robots(False)
 except:
 	print('\n\tPlease install mechanize.\n')
-	sys.exit()
+	Continue
 
 print('\n---------- Welcome To Facebook BruteForce ----------\n')
 file=open('passwords.txt','r')
