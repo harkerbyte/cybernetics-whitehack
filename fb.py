@@ -1,6 +1,6 @@
-from ast import Break
-import time
 import sys
+from ast import Break, Continue
+import time
 if sys.version_info[0] !=2: 
 	print('''--------------------------------------
 	REQUIRED PYTHON 2.x
@@ -35,7 +35,7 @@ while file:
 	passw=file.readline().strip()
 	i+=1
 	if len(passw) < 6:
-		continue
+		Continue
 	print ;str (i) +" : ",passw
 	response = browser.open(post_url)
 	try:
