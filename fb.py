@@ -26,8 +26,7 @@ except:
 print('\n---------- Welcome To Facebook BruteForce ----------\n')
 file=open('passwords.txt','r')
 
-email= input("input Email of target:")
-
+email = input("input Email of target:")
 print ("\nTarget Email ID : ",email)
 print ("\nTrying Passwords from list ")
 i=0
