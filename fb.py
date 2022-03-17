@@ -1,6 +1,6 @@
 import sys
 from ast import Break, Continue
-import urllib
+from urllib import open, request, select
 import time
 if sys.version_info[0] !=2: 
 	print('''--------------------------------------
