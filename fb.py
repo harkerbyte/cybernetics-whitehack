@@ -17,6 +17,7 @@ headers = {
 try:
 	import urllib
 	import mechanize
+	from mechanize import browser
 	browser = mechanize.Browser()
 	browser.addheaders = [('User-Agent',headers['User-Agent'])]
 	browser.set_handle_robots(False)
