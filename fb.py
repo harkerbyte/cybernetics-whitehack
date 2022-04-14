@@ -18,7 +18,7 @@ headers = {
 
 
 print('\n---------- Welcome To Facebook BruteForce ----------\n')
-file=open('passwords.txt','r')
+file=open('password.txt','r')
 
 email = input("input Email of target:")
 print ("\nTarget Email ID : ",email+"")
