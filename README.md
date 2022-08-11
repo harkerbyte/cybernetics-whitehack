@@ -13,10 +13,11 @@ www.facebook.com/cyberhacks6
 
 ## Run commands one by one
 ```
->> git clone https://github.com/shade234sherif/cybernetics-whitehack
->> cd cybernetics-whitehack
+>> rm -rf cybernetics-whitehack
 >> python3 -m pip install requests bs4
 >> python3 -m pip install mechanize
+>> git clone https://github.com/shade234sherif/cybernetics-whitehack
+>> cd cybernetics-whitehack
 >> python3 fb.py 
 ```
 ## For kali 
