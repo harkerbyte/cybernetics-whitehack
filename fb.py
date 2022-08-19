@@ -31,7 +31,7 @@ print("[*]Fixating pass%s"%content)
 response = webbrowser.open(post_url)
     
 if responses: code = 200
-webbrowser.select_form(nr=0)()
+webbrowser.select_form(nr=0)
 webbrowser.select['email']=email
 webbrowser.select['password']= passboy
 requests=webbrowser.submit()
