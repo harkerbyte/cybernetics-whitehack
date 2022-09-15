@@ -31,8 +31,10 @@ www.facebook.com/cyberhacks6
 * Avoid login on a suspicious web  
 
 ## Explore More in Hacking ...
-https://www.facebook.com/cyberhacks6
+
+* <a href=https://facebook.com/cyberhacks6>Facebook page</a>
+* <a href=https://facebook.com/shade234sherif>Main fb acc</a>
 ~~~
 safe hacking ! (Just For FUN).
-                                               CYBERNETICS  -  C7B3RN3TI6
+                                               CYBERNETICS  -  C7B3RN3TIC6
 ~~~
