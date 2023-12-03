@@ -4,7 +4,7 @@
 Bruteforce attack for Facebook Account
 ```
 ## Need help . Contact us via FACEBOOK 
-www.facebook.com/cyberhacks6
+www.facebook.com/harkerbyte
 
 ## Install Requirements (on Linux) termux
 ```
@@ -16,12 +16,12 @@ www.facebook.com/cyberhacks6
 >> rm -rf cybernetics-whitehack
 >> python3 -m pip install requests bs4
 >> python3 -m pip install mechanize
->> git clone https://github.com/shade234sherif/cybernetics-whitehack
+>> git clone https://github.com/harkerbyte/cybernetics-whitehack
 >> cd cybernetics-whitehack
 >> python3 fb.py 
 ```
 ## For kali 
- sudo clone https://github.com/shade234sherif/cybernetics-whitehack
+ sudo clone https://github.com/harkerbyte/cybernetics-whitehack
 
 ## Protection Against Attacker
 * Use Strong Password(which contains character + number + symbol)
@@ -32,9 +32,9 @@ www.facebook.com/cyberhacks6
 
 ## Explore More in Hacking ...
 
-* <a href=https://facebook.com/cyberhacks6>Facebook page</a>
+* <a href=https://facebook.com/harkerbyte>Facebook page</a>
 * <a href=https://facebook.com/shade234sherif>Main fb acc</a>
 ~~~
 safe hacking ! (Just For FUN).
-                                               CYBERNETICS  -  C7B3RN3TIC6
+                                               SHADE  -  SH^DE
 ~~~
